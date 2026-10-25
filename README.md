@@ -1,6 +1,6 @@
 # Fluxmania Legacy — RunPod Serverless worker
 
-A ready-to-build [RunPod Serverless](https://runpod.io?ref=qpguwapm) worker for **Fluxmania Legacy**, a photorealistic FLUX.1 [dev] fine-tune. Based on the official [`runpod/worker-comfyui`](https://github.com/runpod-workers/worker-comfyui).
+A ready-to-build [RunPod Serverless](https://runpod.io?ref=qpguwapm) worker for **[Fluxmania Legacy](https://civitai.com/models/778691?modelVersionId=1769925)**, a photorealistic FLUX.1 [dev] fine-tune. Based on the official [`runpod/worker-comfyui`](https://github.com/runpod-workers/worker-comfyui).
 
 Models are baked into the image, so a cold start does not re-download anything.
 
@@ -10,10 +10,10 @@ Models are baked into the image, so a cold start does not re-download anything.
 
 | File | Source | Size |
 |---|---|---|
-| `diffusion_models/fluxmania_Legacy.safetensors` | Civitai 778691 / version 1769925 | 11.1 GB |
-| `text_encoders/t5xxl_fp8_e4m3fn.safetensors` | comfyanonymous/flux_text_encoders | 4.9 GB |
-| `text_encoders/clip_l.safetensors` | comfyanonymous/flux_text_encoders | 0.2 GB |
-| `vae/ae.safetensors` | Comfy-Org repack (FLUX VAE) | 0.3 GB |
+| `diffusion_models/fluxmania_Legacy.safetensors` | [Civitai 778691 / version 1769925](https://civitai.com/models/778691?modelVersionId=1769925) | 11.1 GB |
+| `text_encoders/t5xxl_fp8_e4m3fn.safetensors` | [comfyanonymous/flux_text_encoders](https://huggingface.co/comfyanonymous/flux_text_encoders) | 4.9 GB |
+| `text_encoders/clip_l.safetensors` | [comfyanonymous/flux_text_encoders](https://huggingface.co/comfyanonymous/flux_text_encoders) | 0.2 GB |
+| `vae/ae.safetensors` | [Comfy-Org repack](https://huggingface.co/Comfy-Org/Lumina-Image-2) (FLUX VAE) | 0.3 GB |
 
 Just the model as its creator released it — no LoRAs, no extra nodes. All files are checked by SHA-256 at build time. The model's license: FLUX.1 [dev] Non-Commercial License.
 
