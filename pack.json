@@ -3,7 +3,7 @@
  "engine": "comfyui",
  "kind": "Text To Image",
  "id": "fluxmania",
- "label": "Fluxmania Legacy",
+ "label": "Fluxmania Kreamania",
  "note": "25 steps, dpmpp_2m, sgm_uniform, Flux guidance 3.5. No negative prompt.",
  "sizes": [
   [
@@ -109,7 +109,7 @@
   },
   "12": {
    "inputs": {
-    "unet_name": "fluxmania_Legacy.safetensors",
+    "unet_name": "fluxmania_kreamania.safetensors",
     "weight_dtype": "default"
    },
    "class_type": "UNETLoader",
@@ -157,7 +157,7 @@
   "17": {
    "inputs": {
     "scheduler": "sgm_uniform",
-    "steps": 25,
+    "steps": 20,
     "denoise": 1,
     "model": [
      "30",

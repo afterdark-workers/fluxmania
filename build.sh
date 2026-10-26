@@ -1,5 +1,5 @@
 #!/bin/sh
-# Fluxmania Legacy — everything the worker image needs. The Dockerfile in your copy downloads this file
+# Fluxmania Kreamania — everything the worker image needs. The Dockerfile in your copy downloads this file
 # from the original repo on every build, so fixes made there reach you with a rebuild.
 set -eu
 case "${CIVITAI_TOKEN:-}" in ""|PASTE_*) echo "ERROR: set CIVITAI_TOKEN at the top of the Dockerfile" >&2; exit 1;; esac
@@ -10,10 +10,10 @@ file() {
   echo "$3  $1" | sha256sum -c - || { echo "ERROR: $1 changed upstream — wait for an update of the original repo, then rebuild" >&2; exit 1; }
 }
 
-# Civitai 778691 / version 1769925 (11.1 GB)
-file /comfyui/models/diffusion_models/fluxmania_Legacy.safetensors \
-  "https://civitai.com/api/download/models/1769925?fileId=1670846&token=${CIVITAI_TOKEN}" \
-  d94dd45c94a5497f3b873f4195477652eb515624e0ed1878eddf0b0abeaed9b7
+# Civitai 778691 / version 2106807 (11.1 GB)
+file /comfyui/models/diffusion_models/fluxmania_kreamania.safetensors \
+  "https://civitai.com/api/download/models/2106807?fileId=2001949&token=${CIVITAI_TOKEN}" \
+  87eec160101661ed31f98f98d031e5f6386424cb1eb2da8796fca8d72a293f96
 
 # comfyanonymous/flux_text_encoders (4.9 GB)
 file /comfyui/models/text_encoders/t5xxl_fp8_e4m3fn.safetensors \

@@ -1,6 +1,6 @@
-# Fluxmania Legacy — RunPod Serverless worker
+# Fluxmania Kreamania — RunPod Serverless worker
 
-A ready-to-build [RunPod Serverless](https://runpod.io?ref=qpguwapm) worker for **[Fluxmania Legacy](https://civitai.com/models/778691?modelVersionId=1769925)**, a photorealistic FLUX.1 [dev] fine-tune. Based on the official [`runpod/worker-comfyui`](https://github.com/runpod-workers/worker-comfyui).
+A ready-to-build [RunPod Serverless](https://runpod.io?ref=qpguwapm) worker for **[Fluxmania Kreamania](https://civitai.com/models/778691?modelVersionId=2106807)**, a photorealistic FLUX.1 [dev] fine-tune. Based on the official [`runpod/worker-comfyui`](https://github.com/runpod-workers/worker-comfyui).
 
 Models are baked into the image, so a cold start does not re-download anything.
 
@@ -10,7 +10,7 @@ Models are baked into the image, so a cold start does not re-download anything.
 
 | File | Source | Size |
 |---|---|---|
-| `diffusion_models/fluxmania_Legacy.safetensors` | [Civitai 778691 / version 1769925](https://civitai.com/models/778691?modelVersionId=1769925) | 11.1 GB |
+| `diffusion_models/fluxmania_kreamania.safetensors` | [Civitai 778691 / version 2106807](https://civitai.com/models/778691?modelVersionId=2106807) | 11.1 GB |
 | `text_encoders/t5xxl_fp8_e4m3fn.safetensors` | [comfyanonymous/flux_text_encoders](https://huggingface.co/comfyanonymous/flux_text_encoders) | 4.9 GB |
 | `text_encoders/clip_l.safetensors` | [comfyanonymous/flux_text_encoders](https://huggingface.co/comfyanonymous/flux_text_encoders) | 0.2 GB |
 | `vae/ae.safetensors` | [Comfy-Org repack](https://huggingface.co/Comfy-Org/Lumina-Image-2) (FLUX VAE) | 0.3 GB |
@@ -56,7 +56,9 @@ To rebuild: commit any change to the `main` branch of your copy — RunPod build
 
 ### Model version
 
-This repo always follows the version the model's creator currently recommends. Now: **Legacy, Civitai version 1769925**.
+This repo always follows the version the model's creator currently recommends. Now: **Kreamania, Civitai version 2106807**.
+The earlier version, **Legacy** (Civitai 1769925), is release `files-a485bc7a5` — pin it as below to keep using it.
+Tip from the model's creator: leave the word "freckles" out of prompts with Kreamania.
 Each change of the build files is kept as a release (`files-…`). To stay on one, replace `latest/download` with `download/files-…` (that release's name) in both `ADD` lines of your `Dockerfile`.
 
 ## Use it
